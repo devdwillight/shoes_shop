@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bảng Chat</title>
+    <style>
+      #chatbox {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #a40b0b;
+        overflow-y: scroll;
+      }
+
+      .message {
+        margin-bottom: 5px;
+        padding: 5px;
+        background-color: #4f9d64;
+        border-radius: 5px;
+      }
+
+      .message .sender {
+        font-weight: bold;
+      }
+
+      .message .timestamp {
+        color: #888888be;
+        font-size: 0.8em;
+      }
+
+      /* CSS cho khung chat bot */
+      .chatbot-container {
+        background-color: #367a47;
+        padding: 10px;
+        color: white; /* Thêm màu chữ trắng cho khung chat bot */
+      }
+
+      /* CSS cho tin nhắn từ chat bot */
+      .chatbot-message {
+        background-color: #2196f3;
+        color: white;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="admin"></div>
+    <input type="text" id="message" placeholder="Nhập tin nhắn" />
+    <button onclick="sendMessage()">Gửi</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
